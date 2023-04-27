@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Projeto3</string>
+    <string name="text_boasvindas">Guru Book</string>
+    <string name="text_login">Login</string>
+    <string name="text_cadastro">Cadastro</string>
+    <string name="text_sobre">Sobre</string>
+    <string name="text_sucesso_login">Login Realizado com Sucesso!</string>
+</resources>
