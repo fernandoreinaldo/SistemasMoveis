@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".cadastro">
+
+    <View
+        android:id="@+id/containerComponentsCadastro"
+        style="@style/containerComponentsCadastro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/nome"
+        style="@style/edit_text"
+        android:hint="Nome Completo"
+        android:drawableRight="@drawable/ic_name"
+        android:textColorHint="@color/white"
+        app:layout_constraintStart_toStartOf="@id/containerComponentsCadastro"
+        app:layout_constraintEnd_toEndOf="@id/containerComponentsCadastro"
+        app:layout_constraintTop_toTopOf="@id/containerComponentsCadastro"
+        />
+
+    <EditText
+        android:id="@+id/endereco"
+        style="@style/edit_text"
+        android:hint="Endereço"
+        android:drawableRight="@drawable/ic_loc"
+        android:textColorHint="@color/white"
+        app:layout_constraintStart_toStartOf="@id/containerComponentsCadastro"
+        app:layout_constraintEnd_toEndOf="@id/containerComponentsCadastro"
+        app:layout_constraintTop_toBottomOf="@id/nome"
+        />
+
+    <EditText
+        android:id="@+id/cep"
+        style="@style/edit_text"
+        android:hint="CEP"
+        android:drawableRight="@drawable/ic_loc"
+        android:textColorHint="@color/white"
+        app:layout_constraintStart_toStartOf="@id/containerComponentsCadastro"
+        app:layout_constraintEnd_toEndOf="@id/containerComponentsCadastro"
+        app:layout_constraintTop_toBottomOf="@id/endereco"
+        />
+
+    <EditText
+        android:id="@+id/complemento"
+        style="@style/edit_text"
+        android:hint="Complemento"
+        android:drawableRight="@drawable/ic_more"
+        android:textColorHint="@color/white"
+        app:layout_constraintStart_toStartOf="@id/containerComponentsCadastro"
+        app:layout_constraintEnd_toEndOf="@id/containerComponentsCadastro"
+        app:layout_constraintTop_toBottomOf="@id/cep"
+        />
+
+    <EditText
+        android:id="@+id/email"
+        style="@style/edit_text"
+        android:hint="E-mail"
+        android:drawableRight="@drawable/ic_mail"
+        android:textColorHint="@color/white"
+        app:layout_constraintStart_toStartOf="@id/containerComponentsCadastro"
+        app:layout_constraintEnd_toEndOf="@id/containerComponentsCadastro"
+        app:layout_constraintTop_toBottomOf="@id/complemento"
+        />
+
+    <Button
+        android:id="@+id/btn_login"
+        style="@style/edit_button"
+        android:layout_marginTop="10dp"
+        android:text="@string/text_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/email"
+        tools:cornerRadius="20dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

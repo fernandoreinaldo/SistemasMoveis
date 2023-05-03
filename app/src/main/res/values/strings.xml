@@ -5,4 +5,11 @@
     <string name="text_cadastro">Cadastro</string>
     <string name="text_sobre">Sobre</string>
     <string name="text_sucesso_login">Login Realizado com Sucesso!</string>
+    <string name="text_erro_login">Erro no Login. Verifique seus dados e tente novamente.</string>
+    <string name="text_voltar">Voltar</string>
+    <string name="text_sucesso_cadastro">Olá "nome". Cadastro realizado com sucesso!</string>
+    <string name="text_erro_cadastro">Erro no Cadastro. Os campos "campoN" e "campoN" devem ser preenchidos.</string>
+    <string name="text_autor">Desenvolvido por: Fernando Reinaldo</string>
+    <string name="text_tela_inicial">Tela Inicial</string>
+    <string name="text_ftec">Uniftec</string>
 </resources>
