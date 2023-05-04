@@ -2,13 +2,15 @@ package com.example.projeto3;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
 public class boasvindas extends AppCompatActivity {
 
-    private TextView text_boasvindas;
+    private Button btn_login;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,9 +18,19 @@ public class boasvindas extends AppCompatActivity {
         setContentView(R.layout.activity_boasvindas);
 
         getSupportActionBar().hide();
+        IniciarComponentes();
+
+        btn_login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(boasvindas.this,login.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void IniciarComponentes(){
-        text_boasvindas = findViewById(R.id.text_boasvindas);
+        btn_login = findViewById(R.id.btn_login);
     }
 }
