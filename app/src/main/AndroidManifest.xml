@@ -21,9 +21,6 @@
             android:name=".sucesso_cadastro"
             android:exported="false" />
         <activity
-            android:name=".sucess"
-            android:exported="false" />
-        <activity
             android:name=".cadastro"
             android:exported="false" />
         <activity

@@ -10,5 +10,7 @@ public class sucesso_cadastro extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sucesso_cadastro);
+
+        getSupportActionBar().hide();
     }
 }
